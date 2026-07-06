@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node / desktop app
+node_modules/
+dist/
+build/
+out/
+.vite/
+.turbo/
+
+# Electron / local runtime
+*.asar
+*.asar.unpacked/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# LW generated/local artifacts
+lw-system/.venv/
+lw-system/src/**/__pycache__/
+lw-desktop/node_modules/
+lw-desktop/dist/
+lw-desktop/vite.log
+lw-desktop/vite.err.log
+
+# Keep notes and source files tracked; app data/reports live outside the repo.

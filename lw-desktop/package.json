@@ -1,0 +1,31 @@
+{
+  "name": "lw-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Luigi's World desktop app shell.",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "electron": "electron .",
+    "electron:dev": "set LW_DESKTOP_DEV=1&& electron .",
+    "app": "concurrently -k \"npm run dev\" \"wait-on http://127.0.0.1:5173 && npm run electron:dev\"",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "concurrently": "^9.2.1",
+    "electron": "^39.2.7",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "wait-on": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "playwright": "^1.61.1"
+  }
+}
