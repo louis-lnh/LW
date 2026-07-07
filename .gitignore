@@ -54,3 +54,5 @@ lw-desktop/vite.log
 lw-desktop/vite.err.log
 
 # Keep notes and source files tracked; app data/reports live outside the repo.
+.archive
+.notes
